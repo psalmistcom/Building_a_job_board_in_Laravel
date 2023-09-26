@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('logo')->nullable();
             $table->boolean('is_highlighted')->default(false);
             $table->boolean('is_active')->default(true);
+            $table->text('content');
+            $table->string('apply_link');
             $table->timestamps();
         });
     }
