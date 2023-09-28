@@ -16,6 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('title');
             $table->string('slug');
+            $table->string('company');
             $table->string('location');
             $table->string('logo')->nullable();
             $table->boolean('is_highlighted')->default(false);
